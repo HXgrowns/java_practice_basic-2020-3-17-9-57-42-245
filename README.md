@@ -9,3 +9,11 @@
     ```
     jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong
     ```
+- 插入语句
+```sql
+INSERT INTO student_jdbc (id, name, gender, admissionYear, birthday, classId) VALUES (?, ?, ?, ?, ?, ?);
+```
+- 删除语句
+```sql
+DELETE FROM student_jdbc WHERE id = ?
+```
